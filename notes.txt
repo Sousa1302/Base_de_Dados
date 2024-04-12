@@ -1,0 +1,27 @@
+tuplo -> Relação direta de um dado especifico de uma linha a uma coluna 
+coluna -> Campo
+linha -> Dado
+
+SQL -> Structured Query Language 
+
+Modelo de Dados -> Um plano que define como os dados serão organizados em um banco de dados
+
+Modelo relacional -> Uma maneira de organizar os dados em tabelas que se relacionam entre si.
+1:1 - um para um
+1:n - um para muitos
+n:n - muitos para muitos
+
+Chave Primaria -> Chave / Valor , que usamos para referenciar a(s) linha(s) de dados.
+
+Chave Estrangeira -> Chave / Valor , que usamos para referenciar a(s) linha(s) de dados de outra tabela.
+
+Diz se que uma relação esta na primeira forma normal se nao tem grupos de atributos ou atributos repetitivos ( = campos repetitivos ).
+Ex ( exemplo negativo ): Um aluno com matricula , nome e curso. Neste exemplo tera a possibilidade de repeticao de atributos.
+
+Diz se que uma relação esta na segunda forma normal se todos os atributos fizerem referencia a chaves de outras tabelas .
+
+Diz se que uma relação esta na terceira forma normal se estiver na segunda forma normal e se todos os seus atributos nao chave tambem sao designados como nao chave.
+
+
+
+
