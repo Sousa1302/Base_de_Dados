@@ -31,7 +31,7 @@ drop table nome_da_basedados;          -> Elimina uma table
 show tables;                           -> Mostra as tabelas dentro daquela database onde estamos
 show columns from nome_da_table;       -> Mostra a estrutura de uma table
 
-create table nome_da_tabela (         -> Cria uma tabela, e dentro dos parenteses fica a estrutura da mesma
+create table nome_da_tabela (          -> Cria uma tabela, e dentro dos parenteses fica a estrutura da mesma
     -> PessoaID int,
     -> ultimoNome varchar(255),
     -> primeiroNome varchar(255),
@@ -40,3 +40,17 @@ create table nome_da_tabela (         -> Cria uma tabela, e dentro dos parentese
     -> );         
 
 create table teste as select ultimoNome, primeiroNome from pessoa;        -> Cria uma tabela chamada "teste" com selecionado "ultimoNome" e "primeiroNome" da tabela pessoa
+
+alter table pessoa add (                                                  -> Altera a tabela "pessoa" adicionando o campo email          
+    -> email varchar(255));
+
+alter table pessoa drop column email;                                     -> Altera a tabela "pessoa" eliminando a coluna email 
+
+alter table pessoa add dataNascimento date;                               -> Altera a tabela "pessoa" adicionando dataNasicmento do tipo "date"
+
+alter table pessoa modify column dataNascimento year;                     -> Altera a tabela "pessoa" modificando a coluna dataNascimento po tipo "year"
+
+
+
+
+
