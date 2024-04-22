@@ -21,7 +21,19 @@ Ex ( exemplo negativo ): Um aluno com matricula , nome e curso. Neste exemplo te
 Diz se que uma relação esta na segunda forma normal se todos os atributos fizerem referencia a chaves de outras tabelas .
 
 Diz se que uma relação esta na terceira forma normal se estiver na segunda forma normal e se todos os seus atributos nao chave tambem sao designados como nao chave.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+
+docker pull mysql                      -> Faz download da imagem mysql atraves do dockerhub
+
+docker run --name mysql -v ./volumecriadoforadocontainer:/volumecriadodentrodocontainer -e MYSQL_ROOT_PASSWORD=pass  -p 3306:3306 -d mysql            -> Cria um container no qual executa uma imagem
+
+-v     -> Para adicionar um volume atached 
+-p     -> Para designar ports ao container
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+mysql -u root -p                       -> Para entrar no ambiente mysql
 
 show databases;                        -> Mostra as databases 
 create database nome_da_basedados;     -> Cria uma base de dados 
