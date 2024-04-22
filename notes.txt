@@ -21,7 +21,22 @@ Ex ( exemplo negativo ): Um aluno com matricula , nome e curso. Neste exemplo te
 Diz se que uma relação esta na segunda forma normal se todos os atributos fizerem referencia a chaves de outras tabelas .
 
 Diz se que uma relação esta na terceira forma normal se estiver na segunda forma normal e se todos os seus atributos nao chave tambem sao designados como nao chave.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
+show databases;                        -> Mostra as databases 
+create database nome_da_basedados;     -> Cria uma base de dados 
+use nome_da_basedados;                 -> Para utilizar uma base de dados 
+drop database nome_da_basedados;       -> Elimina uma base de dados 
+drop table nome_da_basedados;          -> Elimina uma table 
+show tables;                           -> Mostra as tabelas dentro daquela database onde estamos
+show columns from nome_da_table;       -> Mostra a estrutura de uma table
 
+create table nome_da_tabela (         -> Cria uma tabela, e dentro dos parenteses fica a estrutura da mesma
+    -> PessoaID int,
+    -> ultimoNome varchar(255),
+    -> primeiroNome varchar(255),
+    -> morada varchar(255),
+    -> cidade varchar(255)
+    -> );         
 
-
+create table teste as select ultimoNome, primeiroNome from pessoa;        -> Cria uma tabela chamada "teste" com selecionado "ultimoNome" e "primeiroNome" da tabela pessoa
