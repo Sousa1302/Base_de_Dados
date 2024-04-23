@@ -22,6 +22,11 @@ Diz se que uma relação esta na segunda forma normal se todos os atributos fize
 
 Diz se que uma relação esta na terceira forma normal se estiver na segunda forma normal e se todos os seus atributos nao chave tambem sao designados como nao chave.
 
+
+NOT NULL -> Means that the column must always contain a value.
+UNIQUE -> A column will have a primary key
+
+ex: unique (id)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 docker pull mysql                      -> Faz download da imagem mysql atraves do dockerhub
