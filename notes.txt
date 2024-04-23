@@ -24,9 +24,11 @@ Diz se que uma relação esta na terceira forma normal se estiver na segunda for
 
 
 NOT NULL -> Means that the column must always contain a value.
-UNIQUE -> A column will have a primary key
+UNIQUE -> A column will have a unique value
+primary jey (...) -> Puts a primary key 
 
 ex: unique (id)
+ex: primary key (orderID),
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 docker pull mysql                      -> Faz download da imagem mysql atraves do dockerhub
