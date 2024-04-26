@@ -69,6 +69,20 @@ alter table pessoa add dataNascimento date;                               -> Alt
 
 alter table pessoa modify column dataNascimento year;                     -> Altera a tabela "pessoa" modificando a coluna dataNascimento po tipo "year"
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+insert  -> Para inserir valores num campo de uma table
+ex: insert into name_of_table (column1 , column2, column3)
+    -> values ("value1","value2",value3);
+
+show    -> Mostra os valores numa table
+ex: select * from name_of_table;
+
+create view nome_da_view as select nome_da_column from nome_table where condition;           -> Cria basicamente um atalho
+ex: create view maioresDeVinte as select ultimoNome from pessoas where age>20;
+
+
+
 
 
 
