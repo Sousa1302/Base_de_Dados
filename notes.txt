@@ -85,6 +85,14 @@ foreign key (column1) references nome_table (column2);
 ex: foreign key (ID_professor) references alunos (ID_aluno);
 // adiciona uma chave estrangeira a coluna ID_Professor que tem ligacao a coluna ID_aluno da table alunos
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker exec 4f8f /usr/bin/mysqldump -u root -ppass escola > escola_backup.sql 
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+GonRSousa@nexus-desktop:~$ ls
+ Desktop      escola_backup       Imagens   Música    School_Work   Transferências  'VirtualBox VMs'
+ Documentos   escola_backup.sql   Modelos   Público   snap          Vídeos
+GonRSousa@nexus-desktop:~$ cat escola_backup.sql
 
 
 
