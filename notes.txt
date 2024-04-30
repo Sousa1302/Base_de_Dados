@@ -85,6 +85,11 @@ foreign key (column1) references nome_table (column2);
 ex: foreign key (ID_professor) references alunos (ID_aluno);
 // adiciona uma chave estrangeira a coluna ID_Professor que tem ligacao a coluna ID_aluno da table alunos
 
+select count(distinct column) from table;
+// Mostra a quantidade de entidades diferentes naquela coluna daquela tabela 
+
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 docker exec 4f8f /usr/bin/mysqldump -u root -ppass escola > escola_backup.sql 
