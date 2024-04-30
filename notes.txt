@@ -88,6 +88,16 @@ ex: foreign key (ID_professor) references alunos (ID_aluno);
 select count(distinct column) from table;
 // Mostra a quantidade de entidades diferentes naquela coluna daquela tabela 
 
+select * (or columns) from table where (condition);
+ex: select * from Costumer where CostumerName = "jose";
+
+select * (or columns) from table where (condition) order by column desc;       // descendente
+ex: select * from Costumer where city = "London" order by ContactName asc;    // ascendente
+
+inner join -> juncao das duas tabelas , aquilo que e comum entre elas 
+left join -> todos os dados da tabela 1 mais os dados da tabela 2 que sao comum na tabela 1
+right join -> todos os dados da tabela 2 mais os dados da tabela 1 que sao comum na tabela 2
+cross join -> todos os dados das duas tabelas em conjunto 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
