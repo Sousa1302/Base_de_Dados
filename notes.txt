@@ -25,7 +25,7 @@ Diz se que uma relação esta na terceira forma normal se estiver na segunda for
 
 NOT NULL -> Means that the column must always contain a value.
 UNIQUE -> A column will have a unique value
-primary jey (...) -> Puts a primary key 
+primary key (...) -> Puts a primary key 
 
 ex: unique (id)
 ex: primary key (orderID),
