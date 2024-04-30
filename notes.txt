@@ -100,6 +100,8 @@ right join -> todos os dados da tabela 2 mais os dados da tabela 1 que sao comum
 cross join -> todos os dados das duas tabelas em conjunto 
 
 
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 docker exec 4f8f /usr/bin/mysqldump -u root -ppass escola > escola_backup.sql 
