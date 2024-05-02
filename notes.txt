@@ -99,6 +99,22 @@ left join -> todos os dados da tabela 1 mais os dados da tabela 2 que sao comum 
 right join -> todos os dados da tabela 2 mais os dados da tabela 1 que sao comum na tabela 2
 cross join -> todos os dados das duas tabelas em conjunto 
 
+select * from table limit 3;                     -> A quantidade de registos que vai dar return
+ex: select * from Customers limit 5;             -> Vai dar os 5 primeiros registos
+
+select * from table limit 5 offset 2;            -> Devolve 5 registos so que comecam no 2 ou seja do 3-7
+
+select min(column) from table;                   -> Mostra o valor minimo daquela coluna
+
+select min(Price) as PrecoMinimo from table;     -> Utiliza-se o "as" para dar nome a coluna que ira ser mostrada
+    
+selectmax(Price) from table                      -> Mostra o valor maximo daquela coluna
+
+select count(column) from table;                 -> Mostra a quantidade que possui naquela coluna
+ex: select count(ProductID) from table;          
+
+select count(CustomerID) as Contagem from Customer where costumerName like 'an%'    -> Da me a quantidade de pessoas que comecem o nome com "an"
+
 
 
 
