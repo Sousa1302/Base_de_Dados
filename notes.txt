@@ -115,7 +115,7 @@ ex: select count(ProductID) from table;
 
 select count(CustomerID) as Contagem from Customer where costumerName like 'an%'    -> Da me a quantidade de pessoas que comecem o nome com "an"
 
-
+update nome_tabela set nome_coluna = "updated_dado" where nome_coluna = "old_dado"        -> Atualiza um valor numa tabela 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
